@@ -186,9 +186,9 @@ keyframes fadeInDown {
   <script>
     // 📞 Function to open phone dialer and show confirmation
     function callNow(number) {
-      const confirmCall = confirm("Do you want to call +91 ${number}?");
+      const confirmCall = confirm(`Do you want to call +91 ${number}?`);
       if (confirmCall) {
-        window.location.href = "tel:+91${number}";
+        window.location.href = `tel:+91${number}`;
       }
     }
 
