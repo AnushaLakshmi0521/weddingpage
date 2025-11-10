@@ -187,10 +187,10 @@ keyframes fadeInDown {
     // 📞 Function to open phone dialer and show confirmation
     function callNow(number) {
       const confirmCall = confirm(`Do you want to call +91 ${number}?`);
-      if (confirmCall) {
-        window.location.href = `tel:+91${number}`;
-      }
-    }
+      if(confirmCall){
+        window.location.href=`tel:${number}`;
+      }       }
+    
 
     // 📋 Copy phone number to clipboard on click
     function copyNumber(phoneId) {
